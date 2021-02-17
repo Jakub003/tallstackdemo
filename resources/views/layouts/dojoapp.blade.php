@@ -19,10 +19,10 @@
         
     </style>
 </head>
-<body x-data="{darkMode: false}" x-bind:class="{ 'dark' : darkMode, '' : !darkMode}" class="flex flex-col h-screen dark:bg-gray-500" x-cloak>
+<body x-data="{darkMode: false}" x-bind:class="{ 'dark' : darkMode, '' : !darkMode}" class="flex flex-col h-screen " x-cloak>
     
     {{-- Navigation Bar --}}
-    <div class="h-16 border-b gray-200 w-full">
+    <div class="h-16 border-b gray-200 w-full dark:bg-gray-500">
         {{-- Navigation Body --}}
         <div class="flex mx-10 xl:mx-96 my-3 justify-between items-center">
             {{-- Logo --}}
@@ -48,7 +48,7 @@
             </div>
 
         </div>
-        
+
     </div>
 
     {{-- Main Body --}}
