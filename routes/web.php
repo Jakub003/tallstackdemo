@@ -14,7 +14,11 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts/dojoapp');
+});
+
+Route::get('/dojo', function () {
+    return view('layouts/dojoapp');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
