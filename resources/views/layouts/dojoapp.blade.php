@@ -19,7 +19,7 @@
         
     </style>
 </head>
-<body x-data="{darkMode: false}" x-bind:class="{ 'dark' : darkMode, '' : !darkMode}" class="flex flex-col h-screen " x-cloak>
+<body x-data="{darkMode: false}" x-bind:class="{ 'dark' : darkMode, '' : !darkMode}" class="flex flex-col h-screen justify-between " x-cloak>
     
     {{-- Navigation Bar --}}
     <div class="h-16 border-b gray-200 w-full dark:bg-gray-500">
@@ -52,8 +52,23 @@
     </div>
 
     {{-- Main Body --}}
+    <div class="flex flex-col">
+        {{-- Left Navigation --}}
+        <div class="div"></div>
+
+        {{-- Content --}}
+        <div class="div"></div>
+        
+        {{-- Right Navigation --}}
+        <div class="div"></div>
+
+    </div>
+    
 
     {{-- Footer --}}
+    <div class="h-16 w-full bg-gray-900 text-white ">
+        <h2 class="flex mx-10 xl:mx-96 my-3 ">Footer Menu</h2>
+    </div>
 
 </body>
 </html>
