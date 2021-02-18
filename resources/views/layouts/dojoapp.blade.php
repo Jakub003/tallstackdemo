@@ -19,56 +19,65 @@
         
     </style>
 </head>
-<body x-data="{darkMode: false}" x-bind:class="{ 'dark' : darkMode, '' : !darkMode}" class="flex flex-col h-screen justify-between " x-cloak>
-    
-    {{-- Navigation Bar --}}
-    <div class="h-16 border-b gray-200 w-full dark:bg-gray-500">
-        {{-- Navigation Body --}}
-        <div class="flex mx-10 xl:mx-96 my-3 justify-between items-center">
-            {{-- Logo --}}
-            <a href="/" class="flex text-lg space-x-2">
-                <h2 class="font-extrabold text-gray-800">TALL</h2>
-                <h2 class="font-bold text-gray-700">Stack</h2>
-                <h2 class="text-blue-500 font-semibold">Dojo</h2>
-            </a>
+<body x-data="{darkMode: false}" x-bind:class="{ 'dark' : darkMode, '' : !darkMode}" class="font-sans flex flex-col h-screen justify-between" x-cloak>
 
-            {{-- Search --}}
-            <div class="h-8 w-96 pt-0.5 px-5 border rounded bg-gray-100 border-gray-200">
-                Search
-            </div>
+{{-- Header --}}
+<div class="fixed w-full bg-white flex h-16 border-b border-gray-200 justify-center">
+    <div class="p-4 flex w-full lg:w-8/12 justify-between">
+        {{-- Logo --}}
+        <a href="/" class="flex text-lg space-x-2 flex-shrink-0 items-center">
+            <h2 class="font-extrabold text-gray-800">TALL</h2>
+            <h2 class="font-bold text-gray-700">Stack</h2>
+            <h2 class="text-blue-500 font-semibold">Dojo</h2>
+        </a>
 
-            {{-- Submit --}}
-            <div class="flex space-x-3">
-                <button class="p-1 rounded bg-blue-500 text-white text-base focus:outline-none">Submit Ideas</button>
-                <button class="p-1 rounded bg-yellow-500 text-white text-base focus:outline-none">Current Issues</button>
-                <button @click="darkMode = !darkMode" class="focus:outline-none pb-2">
-                    <i class="bi bi-pie-chart-fill text-gray-800 text-2xl" x-show="darkMode" ></i>
-                    <i class="bi bi-pie-chart-fill text-blue-500 text-2xl" x-bind:class="{ 'hidden': darkMode }" ></i>
-                </button>
-            </div>
-
+        {{-- Buttons --}}
+        <div class="flex space-x-2 text-sm">
+            <button class="px-1 rounded bg-blue-500 text-white focus:outline-none flex-shrink-0">Submit Ideas</button>
+            <button class="px-1 rounded bg-yellow-500 text-white focus:outline-none flex-shrink-0">Current Issues</button>
+            <button @click="darkMode = !darkMode" class="focus:outline-none pb-2 flex-shrink-0">
+                <i class="bi bi-pie-chart-fill text-gray-800 " x-show="darkMode" ></i>
+                <i class="bi bi-pie-chart-fill text-blue-500 " x-bind:class="{ 'hidden' : darkMode }" ></i>
+            </button>
         </div>
 
     </div>
+</div>
+{{-- Header END --}}
 
-    {{-- Main Body --}}
-    <div class="flex flex-col">
-        {{-- Left Navigation --}}
-        <div class="div"></div>
+{{-- Body --}}
+<div class="flex mt-16 dark:bg-gray-800 flex-grow justify-center">
+    <div class="hidden lg:flex w-2/12 bg-gray-50"></div>
 
-        {{-- Content --}}
-        <div class="div"></div>
-        
-        {{-- Right Navigation --}}
-        <div class="div"></div>
+    {{-- Content --}}
+    <div class="w-full flex lg:w-8/12 bg-gray-50 lg:justify-between block">
 
+        <div class="fixed w-48 h-full p-4 border-r border-gray-200">Left Navigation
+
+        </div>
+
+        <div class="flex flex-col p-4 ml-48 md:mr-48 flex-grow bg-white">
+            <img src="https://i.gyazo.com/772c45d10792d2554cb5791c4faf2dbd.png">
+            <img src="https://i.gyazo.com/772c45d10792d2554cb5791c4faf2dbd.png">
+            <img src="https://i.gyazo.com/772c45d10792d2554cb5791c4faf2dbd.png">
+        </div>
+
+        {{-- Right Floating Navigation --}}
+        <div class="hidden md:flex fixed w-48 right-0 h-full flex-col space-y-2 text-gray-400 p-4 text-sm bg-white">
+            <h2 class="text-gray-800 font-bold ">ON THIS PAGE</h2>
+            <h2 class="cursor-pointer">Test Item</h2>
+            <h2 class="cursor-pointer">Test Item</h2>
+            <h2 class="cursor-pointer">Test Item</h2>
+            <h2 class="cursor-pointer">Test Item</h2>
+            <h2 class="cursor-pointer">Test Item</h2>
+        </div>
+        {{-- Right Floating Navigation END --}}
     </div>
-    
+    {{-- Content END --}}
 
-    {{-- Footer --}}
-    <div class="h-16 w-full bg-gray-900 text-white ">
-        <h2 class="flex mx-10 xl:mx-96 my-3 ">Footer Menu</h2>
-    </div>
+    <div class="hidden lg:flex w-2/12 bg-white"></div>
+</div>
+{{-- Body END --}}
 
 </body>
 </html>
