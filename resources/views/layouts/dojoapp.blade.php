@@ -15,8 +15,44 @@
     <script src="https://cdn.jsdelivr.net/gh/alpine-collective/alpine-magic-helpers@0.6.x/dist/index.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/@tailwindcss/typography@0.2.x/dist/typography.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/codemirror@5.59.2/lib/codemirror.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        
+        .cursive {
+            font-family: 'Nanum Pen Script', cursive;
+        }
+        [x-cloak] { display: none; }
+
+        .CodeMirror-focused {   
+            border-radius: .375rem;
+            outline: 2px solid transparent;
+            outline-offset: 2px;
+            --tw-ring-opacity: 0.5;
+            --tw-ring-color: rgba(199, 210, 254, var(--tw-ring-opacity));
+            --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+            --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(3px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+            box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+        }
+        .CodeMirror {
+            padding: 0.75rem;
+            font-family: inherit;
+            font-size: inherit;
+            border-bottom-left-radius: .375rem;
+            border-bottom-right-radius: .375rem;
+            --tw-border-opacity: 1;
+            border: 1px solid rgba(209, 213, 219, var(--tw-border-opacity));
+        }
+        .CodeMirror.CodeMirror-focused {
+            --tw-border-opacity: 1;
+            border-color: rgba(165, 180, 252, var(--tw-border-opacity));
+        }
+
+        .cm-s-default .cm-header,
+        .cm-s-default .cm-variable-2 {
+            color: rgb(31, 41, 55);
+        }
     </style>
 </head>
 <body x-data="{darkMode: false}" x-bind:class="{ 'dark' : darkMode, '' : !darkMode}" class="font-sans flex flex-col h-screen justify-between" x-cloak>
