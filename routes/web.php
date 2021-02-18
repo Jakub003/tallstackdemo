@@ -14,7 +14,15 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('layouts/dojoapp');
+    return view('welcome');
+});
+
+Route::get('/ideas', function () {
+    return view('ideas');
+});
+
+Route::get('/backlog', function () {
+    return view('backlog');
 });
 
 Route::get('/dojo', function () {

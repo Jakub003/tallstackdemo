@@ -32,12 +32,12 @@
         </a>
 
         {{-- Buttons --}}
-        <div class="flex space-x-2 text-sm">
-            <button class="px-1 rounded bg-blue-500 text-white focus:outline-none flex-shrink-0">Submit Ideas</button>
-            <button class="px-1 rounded bg-yellow-500 text-white focus:outline-none flex-shrink-0">Current Issues</button>
-            <button @click="darkMode = !darkMode" class="focus:outline-none pb-2 flex-shrink-0">
-                <i class="bi bi-pie-chart-fill text-gray-800 " x-show="darkMode" ></i>
-                <i class="bi bi-pie-chart-fill text-blue-500 " x-bind:class="{ 'hidden' : darkMode }" ></i>
+        <div class="flex space-x-3 text-sm items-center">
+            <a href="/ideas"><button class="px-1 rounded bg-blue-500 text-white focus:outline-none flex-shrink-0">Submit Ideas</button></a>
+            <a href="/backlog"><button class="px-1 rounded bg-yellow-500 text-white focus:outline-none flex-shrink-0">Current Issues</button></a>
+            <button @click="darkMode = !darkMode" class="focus:outline-none flex-shrink-0 text-xl h-16 w-6 pb-2">
+                <i class="bi bi-moon text-blue-500 " x-show="darkMode" ></i>
+                <i class="bi bi-brightness-high-fill text-yellow-500  " x-bind:class="{ 'hidden' : darkMode }" ></i>
             </button>
         </div>
 
@@ -54,7 +54,6 @@
 
         {{-- Navigation --}}
         <nav class="hidden md:block fixed w-60 space-y-4 h-full p-4 border-r bg-gray-50 border-gray-200">
-
             <div class="flex justify-between items-center cursor-pointer">
                 <div class="flex space-x-2 items-center">
                     <img src="https://i.imgur.com/uRxfWQn.png" class="h-8 w-8 rounded"/>
@@ -62,7 +61,7 @@
                 </div>
                 <i class="bi bi-chevron-right text-gray-500 text-sm pb-1"></i>
             </div>
-
+            
             <div class="flex flex-col space-y-1">
                 <div class="flex justify-between items-center  cursor-pointer">
                     <div class="flex space-x-2 items-center">
@@ -87,7 +86,7 @@
                 </div>
                 <i class="bi bi-chevron-right text-gray-500 text-sm pb-1"></i>
             </div>
-
+            
             <div class="flex justify-between items-center cursor-pointer">
                 <div class="flex space-x-2 items-center">
                     <img src="https://avatars.githubusercontent.com/u/59030169?s=280&v=4" class="h-8 w-8 rounded"/>
@@ -95,7 +94,7 @@
                 </div>
                 <i class="bi bi-chevron-right text-gray-500 text-sm pb-1"></i>
             </div>
-
+            
             <div class="flex justify-between items-center cursor-pointer">
                 <div class="flex space-x-2 items-center">
                     <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/194_Laravel-512.png" class="h-8 w-8 rounded"/>
@@ -103,7 +102,7 @@
                 </div>
                 <i class="bi bi-chevron-right text-gray-500 text-sm pb-1"></i>
             </div>
-
+            
             <div class="flex justify-between items-center cursor-pointer">
                 <div class="flex space-x-2 items-center">
                     <img src="https://laravel-livewire.com/img/twitter.png" class="h-8 w-8 rounded"/>
@@ -111,25 +110,15 @@
                 </div>
                 <i class="bi bi-chevron-right text-gray-500 text-sm pb-1"></i>
             </div>
-    
         </nav>
         {{-- Navigation END --}}
 
-        <div class="flex flex-col p-4 md:ml-60 lg:mr-48 flex-grow bg-white">
-            <img src="https://i.gyazo.com/772c45d10792d2554cb5791c4faf2dbd.png">
-            <img src="https://i.gyazo.com/772c45d10792d2554cb5791c4faf2dbd.png">
-            <img src="https://i.gyazo.com/772c45d10792d2554cb5791c4faf2dbd.png">
-        </div>
+        {{-- Content --}}
+        @yield('content')
+        {{-- Content END --}}
 
         {{-- Right Floating Navigation --}}
-        <div class="hidden lg:flex fixed w-48 right-0 h-full flex-col space-y-2 text-gray-400 p-4 text-sm bg-white">
-            <h2 class="text-gray-800 font-bold ">ON THIS PAGE</h2>
-            <h2 class="cursor-pointer">Test Item</h2>
-            <h2 class="cursor-pointer">Test Item</h2>
-            <h2 class="cursor-pointer">Test Item</h2>
-            <h2 class="cursor-pointer">Test Item</h2>
-            <h2 class="cursor-pointer">Test Item</h2>
-        </div>
+        @yield('sidebar')
         {{-- Right Floating Navigation END --}}
     </div>
     {{-- Content END --}}
