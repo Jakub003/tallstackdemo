@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>One Project App</title>
+    <title>TALL Stack Dojo</title>
 
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
 
@@ -58,12 +58,12 @@
 <body x-data="{darkMode: false}" x-bind:class="{ 'dark' : darkMode, '' : !darkMode}" class="font-sans flex flex-col h-screen justify-between" x-cloak>
 
 {{-- Header --}}
-<div class="fixed w-full bg-white flex h-16 border-b border-gray-200 justify-center">
+<div class="fixed w-full bg-white flex h-16 border-b border-gray-200 dark:bg-gray-700 dark:text-white justify-center">
     <div class="p-4 flex w-full lg:w-8/12 justify-between">
         {{-- Logo --}}
         <a href="/" class="hidden sm:flex text-lg space-x-2 flex-shrink-0 items-center">
-            <h2 class="font-extrabold text-gray-800">TALL</h2>
-            <h2 class="font-bold text-gray-700">Stack</h2>
+            <h2 class="font-extrabold text-gray-800 dark:text-white">TALL</h2>
+            <h2 class="font-bold text-gray-700 dark:text-gray-300">Stack</h2>
             <h2 class="text-blue-500 font-semibold">Dojo</h2>
         </a>
 

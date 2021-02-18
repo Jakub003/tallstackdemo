@@ -48,15 +48,15 @@
             <h2 class="block tracking-wide text-gray-700 text-xs font-bold ">STAY IN TOUCH</h2>
             <div class="flex space-x-3 ">
                 <img src="https://i.imgur.com/OpyZ0TN.png" class="h-6 w-6 rounded">
-                <a href="#">Join Our Discord Community</a>
+                <a href="https://discord.gg/kyqVwzgv4j" target="_blank" >Join Our Discord Community</a>
             </div>
             <div class="flex space-x-3 ">
                 <img src="https://i.imgur.com/pFtj51o.png" class="h-6 w-6 rounded">
-                <a href="#">Twitter</a>
+                <a href="https://twitter.com/tallstackdojo" target="_blank">Twitter</a>
             </div>
             <div class="flex space-x-3 ">
                 <img src="https://i.imgur.com/Rr50knM.png" class="h-6 w-6 rounded">
-                <a href="#">Instagram</a>
+                <a href="https://www.instagram.com/tallstackdojo/" target="_blank">Instagram</a>
             </div>
             
         </div>
