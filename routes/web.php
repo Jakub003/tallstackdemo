@@ -30,5 +30,29 @@ Route::get('/dojo', function () {
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
+    return view('/backend/dashboard');
 })->name('dashboard');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/navigation', function () {
+    return view('/backend/navigation');
+})->name('navigation');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/addpages', function () {
+    return view('/backend/addpages');
+})->name('addpages');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/viewpages', function () {
+    return view('/backend/viewpages');
+})->name('viewpages');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/addbacklog', function () {
+    return view('/backend/addbacklog');
+})->name('addbacklog');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/viewbacklog', function () {
+    return view('/backend/viewbacklog');
+})->name('viewbacklog');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/viewideas', function () {
+    return view('/backend/viewideas');
+})->name('viewideas');

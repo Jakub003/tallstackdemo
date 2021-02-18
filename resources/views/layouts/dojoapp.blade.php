@@ -58,8 +58,8 @@
 <body x-data="{darkMode: false}" x-bind:class="{ 'dark' : darkMode, '' : !darkMode}" class="font-sans flex flex-col h-screen justify-between" x-cloak>
 
 {{-- Header --}}
-<div class="fixed w-full bg-white flex h-16 border-b border-gray-200 dark:bg-gray-700 dark:text-white justify-center">
-    <div class="p-4 flex w-full lg:w-8/12 justify-between">
+<div class="w-full bg-white flex h-16 border-b border-gray-200 dark:bg-gray-700 dark:text-white justify-center">
+    <div class="p-4 flex w-full xl:w-8/12 justify-between">
         {{-- Logo --}}
         <a href="/" class="hidden sm:flex text-lg space-x-2 flex-shrink-0 items-center">
             <h2 class="font-extrabold text-gray-800 dark:text-white">TALL</h2>
@@ -82,14 +82,14 @@
 {{-- Header END --}}
 
 {{-- Body --}}
-<div class="flex mt-16  flex-grow justify-center">
+<div class="flex flex-grow justify-center overflow-hidden">
     <div class="hidden xl:flex w-2/12 bg-gray-50"></div>
 
     {{-- Content --}}
-    <div class="w-full flex xl:w-8/12 dark:bg-gray-800 xl:justify-between block">
+    <div class="w-full flex xl:w-8/12 dark:bg-gray-800 xl:justify-between">
 
         {{-- Navigation --}}
-        <nav class="hidden md:block fixed w-60 space-y-4 h-full p-4 border-r bg-gray-50 border-gray-200">
+        <nav class="hidden md:block w-60 space-y-4  p-4 border-r bg-gray-50 border-gray-200 flex-shrink-0">
             <div class="flex justify-between items-center cursor-pointer">
                 <div class="flex space-x-2 items-center">
                     <img src="https://i.imgur.com/uRxfWQn.png" class="h-8 w-8 rounded"/>
