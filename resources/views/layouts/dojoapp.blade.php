@@ -25,7 +25,7 @@
 <div class="fixed w-full bg-white flex h-16 border-b border-gray-200 justify-center">
     <div class="p-4 flex w-full lg:w-8/12 justify-between">
         {{-- Logo --}}
-        <a href="/" class="flex text-lg space-x-2 flex-shrink-0 items-center">
+        <a href="/" class="hidden sm:flex text-lg space-x-2 flex-shrink-0 items-center">
             <h2 class="font-extrabold text-gray-800">TALL</h2>
             <h2 class="font-bold text-gray-700">Stack</h2>
             <h2 class="text-blue-500 font-semibold">Dojo</h2>
@@ -46,24 +46,83 @@
 {{-- Header END --}}
 
 {{-- Body --}}
-<div class="flex mt-16 dark:bg-gray-800 flex-grow justify-center">
-    <div class="hidden lg:flex w-2/12 bg-gray-50"></div>
+<div class="flex mt-16  flex-grow justify-center">
+    <div class="hidden xl:flex w-2/12 bg-gray-50"></div>
 
     {{-- Content --}}
-    <div class="w-full flex lg:w-8/12 bg-gray-50 lg:justify-between block">
+    <div class="w-full flex xl:w-8/12 dark:bg-gray-800 xl:justify-between block">
 
-        <div class="fixed w-48 h-full p-4 border-r border-gray-200">Left Navigation
+        {{-- Navigation --}}
+        <nav class="hidden md:block fixed w-60 space-y-4 h-full p-4 border-r bg-gray-50 border-gray-200">
 
-        </div>
+            <div class="flex justify-between items-center cursor-pointer">
+                <div class="flex space-x-2 items-center">
+                    <img src="https://i.imgur.com/uRxfWQn.png" class="h-8 w-8 rounded"/>
+                    <h2>Getting Started</h2>
+                </div>
+                <i class="bi bi-chevron-right text-gray-500 text-sm pb-1"></i>
+            </div>
 
-        <div class="flex flex-col p-4 ml-48 md:mr-48 flex-grow bg-white">
+            <div class="flex flex-col space-y-1">
+                <div class="flex justify-between items-center  cursor-pointer">
+                    <div class="flex space-x-2 items-center">
+                        <img src="https://i.imgur.com/Wxuqcvw.png" class="h-8 w-8 rounded"/>
+                        <h2>VS Code</h2>
+                    </div>
+                    <i class="bi bi-chevron-down text-gray-500 text-sm pb-1"></i>
+                </div>
+                <div class="pl-10 space-y-1  cursor-pointer">
+                    <h4>Item 1</h4>
+                    <h4>Item 1</h4>
+                    <h4>Item 1</h4>
+                    <h4>Item 1</h4>
+                    <h4>Item 1</h4>
+                </div>
+            </div>
+                
+            <div class="flex justify-between items-center cursor-pointer">
+                <div class="flex space-x-2 items-center">
+                    <img src="https://miro.medium.com/max/632/1*5QD8DKhOjRe-gcYjozlLNQ.png" class="h-8 w-8 rounded"/>
+                    <h2>Tailwind CSS</h2>
+                </div>
+                <i class="bi bi-chevron-right text-gray-500 text-sm pb-1"></i>
+            </div>
+
+            <div class="flex justify-between items-center cursor-pointer">
+                <div class="flex space-x-2 items-center">
+                    <img src="https://avatars.githubusercontent.com/u/59030169?s=280&v=4" class="h-8 w-8 rounded"/>
+                    <h2>Alpine JS</h2>
+                </div>
+                <i class="bi bi-chevron-right text-gray-500 text-sm pb-1"></i>
+            </div>
+
+            <div class="flex justify-between items-center cursor-pointer">
+                <div class="flex space-x-2 items-center">
+                    <img src="https://cdn3.iconfinder.com/data/icons/logos-and-brands-adobe/512/194_Laravel-512.png" class="h-8 w-8 rounded"/>
+                    <h2>Laravel</h2>
+                </div>
+                <i class="bi bi-chevron-right text-gray-500 text-sm pb-1"></i>
+            </div>
+
+            <div class="flex justify-between items-center cursor-pointer">
+                <div class="flex space-x-2 items-center">
+                    <img src="https://laravel-livewire.com/img/twitter.png" class="h-8 w-8 rounded"/>
+                    <h2>Livewire</h2>
+                </div>
+                <i class="bi bi-chevron-right text-gray-500 text-sm pb-1"></i>
+            </div>
+    
+        </nav>
+        {{-- Navigation END --}}
+
+        <div class="flex flex-col p-4 md:ml-60 lg:mr-48 flex-grow bg-white">
             <img src="https://i.gyazo.com/772c45d10792d2554cb5791c4faf2dbd.png">
             <img src="https://i.gyazo.com/772c45d10792d2554cb5791c4faf2dbd.png">
             <img src="https://i.gyazo.com/772c45d10792d2554cb5791c4faf2dbd.png">
         </div>
 
         {{-- Right Floating Navigation --}}
-        <div class="hidden md:flex fixed w-48 right-0 h-full flex-col space-y-2 text-gray-400 p-4 text-sm bg-white">
+        <div class="hidden lg:flex fixed w-48 right-0 h-full flex-col space-y-2 text-gray-400 p-4 text-sm bg-white">
             <h2 class="text-gray-800 font-bold ">ON THIS PAGE</h2>
             <h2 class="cursor-pointer">Test Item</h2>
             <h2 class="cursor-pointer">Test Item</h2>
@@ -75,7 +134,7 @@
     </div>
     {{-- Content END --}}
 
-    <div class="hidden lg:flex w-2/12 bg-white"></div>
+    <div class="hidden xl:flex w-2/12 bg-white"></div>
 </div>
 {{-- Body END --}}
 
