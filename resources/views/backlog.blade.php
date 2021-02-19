@@ -54,7 +54,7 @@
                 <div class="group flex flex-col  border border-gray-200 rounded-md shadow-sm hover:shadow-md m-2">
 
                     {{-- Task Tag --}}
-                    <div class="flex p-4 cursor-pointer">
+                    <div class="flex px-4 pt-4 cursor-pointer">
                         <div class="flex flex-row bg-blue-500 hover:bg-blue-400 rounded space-x-1 text-sm text-white p-1  items-center"> 
                             <i class="bi bi-hash transform -translate-y-0.5"></i>
                             <h2 class="px-1"> Tailwind CSS </h2>
@@ -62,38 +62,14 @@
                     </div>
 
                     {{-- Title --}}
-                    <div class="flex flex-row space-x-2 px-4 items-center space-x-2"> 
+                    <div class="flex flex-row space-x-2 p-4 items-center space-x-2"> 
                         <i class="bi bi-diamond-fill text-xs text-red-400 transform -translate-y-0.5"></i>
                         <a href="#">   
                             <h2 class="text-sm transnform -translate-y-1 hover:text-blue-500 ">Responsive Mobile Layout</h2> 
                         </a>
                     </div>
 
-                    <div class="border-b border-gray-200 py-2"></div>
-
-                    <!-- Task Features -->
-                    <div class="flex flex-row px-4 py-2 justify-between items-center"> 
-                        <div class="flex flex-row text-xs text-gray-400 space-x-3 "> 
-                            <div class="flex flex-row space-x-1 px-2 py-1 rounded hover:bg-gray-100 hover:text-black  "> 
-                                <i class="bi bi-chat-square transform -translate-y-0.5 "></i>
-                                <h2 class="">18</h2>
-                            </div>
-                            <div class="flex flex-row space-x-1 px-2 py-1 rounded hover:bg-gray-100 hover:text-black "> 
-                                <i class="bi bi-paperclip transform -translate-y-0.5 "></i>
-                                <h2>7</h2>
-                            </div>
-                            <div class="flex flex-row space-x-1  px-2 py-1 rounded hover:bg-gray-100 hover:text-black "> 
-                                <i class="bi bi-check-square transform -translate-y-0.5"></i>
-                                <h2>3 / 14</h2>
-                            </div>
-                        </div>
-                        <div class="flex flex-row"> 
-                            <div> 
-                                <img src="https://demos.creative-tim.com/tailwindcss-starter-project/_next/static/images/team-4-470x470-4ef82ef45a9598d24c4c951ead4d626a.png" 
-                                    class="shadow rounded-full max-w-full h-6">
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 {{-- Task Card END --}}
 
@@ -101,7 +77,7 @@
                 <div class="group flex flex-col  border border-gray-200 rounded-md shadow-sm hover:shadow-md m-2">
 
                     {{-- Task Tag --}}
-                    <div class="flex p-4 cursor-pointer">
+                    <div class="flex px-4 pt-4 cursor-pointer">
                         <div class="flex flex-row bg-purple-500 hover:bg-purple-400 rounded space-x-1 text-sm text-white p-1  items-center"> 
                             <i class="bi bi-hash transform -translate-y-0.5"></i>
                             <h2 class="px-1"> Alpine JS </h2>
@@ -109,38 +85,14 @@
                     </div>
 
                     {{-- Title --}}
-                    <div class="flex flex-row space-x-2 px-4 items-center space-x-2"> 
+                    <div class="flex flex-row space-x-2 p-4 items-center space-x-2"> 
                         <i class="bi bi-diamond-fill text-xs text-yellow-400 transform -translate-y-0.5"></i>
                         <a href="#">   
                             <h2 class="text-sm transnform -translate-y-1 hover:text-blue-500 ">Drag and drop functionality</h2> 
                         </a>
                     </div>
 
-                    <div class="border-b border-gray-200 py-2"></div>
-
-                    <!-- Task Features -->
-                    <div class="flex flex-row px-4 py-2 justify-between items-center"> 
-                        <div class="flex flex-row text-xs text-gray-400 space-x-3 "> 
-                            <div class="flex flex-row space-x-1 px-2 py-1 rounded hover:bg-gray-100 hover:text-black  "> 
-                                <i class="bi bi-chat-square transform -translate-y-0.5 "></i>
-                                <h2 class="">18</h2>
-                            </div>
-                            <div class="flex flex-row space-x-1 px-2 py-1 rounded hover:bg-gray-100 hover:text-black "> 
-                                <i class="bi bi-paperclip transform -translate-y-0.5 "></i>
-                                <h2>7</h2>
-                            </div>
-                            <div class="flex flex-row space-x-1  px-2 py-1 rounded hover:bg-gray-100 hover:text-black "> 
-                                <i class="bi bi-check-square transform -translate-y-0.5"></i>
-                                <h2>3 / 14</h2>
-                            </div>
-                        </div>
-                        <div class="flex flex-row"> 
-                            <div> 
-                                <img src="https://demos.creative-tim.com/tailwindcss-starter-project/_next/static/images/team-4-470x470-4ef82ef45a9598d24c4c951ead4d626a.png" 
-                                    class="shadow rounded-full max-w-full h-6">
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 {{-- Task Card END --}}
 
@@ -148,7 +100,7 @@
                 <div class="group flex flex-col  border border-gray-200 rounded-md shadow-sm hover:shadow-md m-2">
 
                     {{-- Task Tag --}}
-                    <div class="flex p-4 cursor-pointer">
+                    <div class="flex px-4 pt-4 cursor-pointer">
                         <div class="flex flex-row bg-purple-500 hover:bg-purple-400 rounded space-x-1 text-sm text-white p-1  items-center"> 
                             <i class="bi bi-hash transform -translate-y-0.5"></i>
                             <h2 class="px-1"> Alpine JS </h2>
@@ -156,38 +108,14 @@
                     </div>
 
                     {{-- Title --}}
-                    <div class="flex flex-row space-x-2 px-4 items-center space-x-2"> 
+                    <div class="flex flex-row space-x-2 p-4 items-center space-x-2"> 
                         <i class="bi bi-diamond-fill text-xs text-green-400 transform -translate-y-0.5"></i>
                         <a href="#">   
                             <h2 class="text-sm transnform -translate-y-1 hover:text-blue-500 ">Accordian Menu</h2> 
                         </a>
                     </div>
 
-                    <div class="border-b border-gray-200 py-2"></div>
-
-                    <!-- Task Features -->
-                    <div class="flex flex-row px-4 py-2 justify-between items-center"> 
-                        <div class="flex flex-row text-xs text-gray-400 space-x-3 "> 
-                            <div class="flex flex-row space-x-1 px-2 py-1 rounded hover:bg-gray-100 hover:text-black  "> 
-                                <i class="bi bi-chat-square transform -translate-y-0.5 "></i>
-                                <h2 class="">18</h2>
-                            </div>
-                            <div class="flex flex-row space-x-1 px-2 py-1 rounded hover:bg-gray-100 hover:text-black "> 
-                                <i class="bi bi-paperclip transform -translate-y-0.5 "></i>
-                                <h2>7</h2>
-                            </div>
-                            <div class="flex flex-row space-x-1  px-2 py-1 rounded hover:bg-gray-100 hover:text-black "> 
-                                <i class="bi bi-check-square transform -translate-y-0.5"></i>
-                                <h2>3 / 14</h2>
-                            </div>
-                        </div>
-                        <div class="flex flex-row"> 
-                            <div> 
-                                <img src="https://demos.creative-tim.com/tailwindcss-starter-project/_next/static/images/team-4-470x470-4ef82ef45a9598d24c4c951ead4d626a.png" 
-                                    class="shadow rounded-full max-w-full h-6">
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 {{-- Task Card END --}}
 
@@ -217,7 +145,7 @@
                 <div class="group flex flex-col  border border-gray-200 rounded-md shadow-sm hover:shadow-md m-2">
 
                     {{-- Task Tag --}}
-                    <div class="flex p-4 cursor-pointer">
+                    <div class="flex px-4 pt-4 cursor-pointer">
                         <div class="flex flex-row bg-red-500 hover:bg-red-400 rounded space-x-1 text-sm text-white p-1  items-center"> 
                             <i class="bi bi-hash transform -translate-y-0.5"></i>
                             <h2 class="px-1"> Laravel </h2>
@@ -225,37 +153,13 @@
                     </div>
 
                     {{-- Title --}}
-                    <div class="flex flex-row space-x-2 px-4 items-center space-x-2"> 
+                    <div class="flex flex-row space-x-2 p-4 items-center space-x-2"> 
                         <a href="#">   
                             <h2 class="text-sm transnform -translate-y-1 hover:text-blue-500 ">generic CRUD guide</h2> 
                         </a>
                     </div>
 
-                    <div class="border-b border-gray-200 py-2"></div>
-
-                    <!-- Task Features -->
-                    <div class="flex flex-row px-4 py-2 justify-between items-center"> 
-                        <div class="flex flex-row text-xs text-gray-400 space-x-3 "> 
-                            <div class="flex flex-row space-x-1 px-2 py-1 rounded hover:bg-gray-100 hover:text-black  "> 
-                                <i class="bi bi-chat-square transform -translate-y-0.5 "></i>
-                                <h2 class="">18</h2>
-                            </div>
-                            <div class="flex flex-row space-x-1 px-2 py-1 rounded hover:bg-gray-100 hover:text-black "> 
-                                <i class="bi bi-paperclip transform -translate-y-0.5 "></i>
-                                <h2>7</h2>
-                            </div>
-                            <div class="flex flex-row space-x-1  px-2 py-1 rounded hover:bg-gray-100 hover:text-black "> 
-                                <i class="bi bi-check-square transform -translate-y-0.5"></i>
-                                <h2>3 / 14</h2>
-                            </div>
-                        </div>
-                        <div class="flex flex-row"> 
-                            <div> 
-                                <img src="https://demos.creative-tim.com/tailwindcss-starter-project/_next/static/images/team-4-470x470-4ef82ef45a9598d24c4c951ead4d626a.png" 
-                                    class="shadow rounded-full max-w-full h-6">
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 {{-- Task Card END --}}
 
@@ -297,38 +201,14 @@
                     </div>
 
                     {{-- Title --}}
-                    <div class="flex flex-row space-x-2 px-4 items-center space-x-2"> 
+                    <div class="flex flex-row space-x-2 p-4 items-center space-x-2"> 
                     
                         <a href="#">   
                             <h2 class="text-sm transnform -translate-y-1 hover:text-blue-500 ">Dark Mode</h2> 
                         </a>
                     </div>
 
-                    <div class="border-b border-gray-200 py-2"></div>
-
-                    <!-- Task Features -->
-                    <div class="flex flex-row px-4 py-2 justify-between items-center"> 
-                        <div class="flex flex-row text-xs text-gray-400 space-x-3 "> 
-                            <div class="flex flex-row space-x-1 px-2 py-1 rounded hover:bg-gray-100 hover:text-black  "> 
-                                <i class="bi bi-chat-square transform -translate-y-0.5 "></i>
-                                <h2 class="">18</h2>
-                            </div>
-                            <div class="flex flex-row space-x-1 px-2 py-1 rounded hover:bg-gray-100 hover:text-black "> 
-                                <i class="bi bi-paperclip transform -translate-y-0.5 "></i>
-                                <h2>7</h2>
-                            </div>
-                            <div class="flex flex-row space-x-1  px-2 py-1 rounded hover:bg-gray-100 hover:text-black "> 
-                                <i class="bi bi-check-square transform -translate-y-0.5"></i>
-                                <h2>3 / 14</h2>
-                            </div>
-                        </div>
-                        <div class="flex flex-row"> 
-                            <div> 
-                                <img src="https://demos.creative-tim.com/tailwindcss-starter-project/_next/static/images/team-4-470x470-4ef82ef45a9598d24c4c951ead4d626a.png" 
-                                    class="shadow rounded-full max-w-full h-6">
-                            </div>
-                        </div>
-                    </div>
+                    
                 </div>
                 {{-- Task Card END --}}
 

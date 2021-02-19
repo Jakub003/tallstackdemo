@@ -45,14 +45,15 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/viewpages', function () {
     return view('/backend/viewpages');
 })->name('viewpages');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/addbacklog', function () {
-    return view('/backend/addbacklog');
-})->name('addbacklog');
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/viewbacklog', function () {
-    return view('/backend/viewbacklog');
-})->name('viewbacklog');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/viewideas', function () {
     return view('/backend/viewideas');
 })->name('viewideas');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/kanban', function () {
+    return view('/backend/kanban');
+})->name('kanban');
+
+Route::middleware(['auth:sanctum', 'verified'])->get('/kanbantask', function () {
+    return view('/backend/kanbantask');
+})->name('kanbantask');

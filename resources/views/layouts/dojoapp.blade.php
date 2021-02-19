@@ -29,21 +29,28 @@
 <div class="w-full bg-white flex h-16 border-b border-gray-200 dark:bg-gray-700 dark:text-white justify-center">
     <div class="p-4 flex w-full xl:w-8/12 justify-between">
         {{-- Logo --}}
-        <a href="/" class="hidden sm:flex text-lg space-x-2 flex-shrink-0 items-center">
+        <a href="/" class="hidden sm:flex text-lg space-x-2 flex-shrink-0 items-center w-60">
             <h2 class="font-extrabold text-gray-800 dark:text-white">TALL</h2>
             <h2 class="font-bold text-gray-700 dark:text-gray-300">Stack</h2>
             <h2 class="text-blue-500 font-semibold">Dojo</h2>
         </a>
 
-        {{-- Buttons --}}
-        <div class="flex space-x-3 text-sm items-center">
-            <a href="/ideas"><button class="px-1 rounded bg-blue-500 text-white focus:outline-none flex-shrink-0">Submit Ideas</button></a>
-            <a href="/backlog"><button class="px-1 rounded bg-yellow-500 text-white focus:outline-none flex-shrink-0">Current Issues</button></a>
-            <button @click="darkMode = !darkMode" class="focus:outline-none flex-shrink-0 text-xl h-16 w-6 pb-2">
-                <i class="bi bi-moon text-blue-500 " x-show="darkMode" ></i>
-                <i class="bi bi-brightness-high-fill text-yellow-500  " x-bind:class="{ 'hidden' : darkMode }" ></i>
-            </button>
+        <div class="flex w-full justify-between items-center pl-2">
+            <div class="flex space-x-4">
+                <a href="/dashboard" class="hover:text-blue-500 font-semibold">Dashboard View</a>
+                <a href="/kanban" class="hover:text-blue-500 font-semibold">Kanban</a>
+            </div>
+            {{-- Buttons --}}
+            <div class="flex space-x-3 text-sm items-center">
+                <a href="/ideas"><button class="px-1 rounded bg-blue-500 text-white focus:outline-none flex-shrink-0">Submit Ideas</button></a>
+                <a href="/backlog"><button class="px-1 rounded bg-yellow-500 text-white focus:outline-none flex-shrink-0">Current Issues</button></a>
+                <button @click="darkMode = !darkMode" class="focus:outline-none flex-shrink-0 text-xl h-16 w-6 pb-2">
+                    <i class="bi bi-moon text-blue-500 " x-show="darkMode" ></i>
+                    <i class="bi bi-brightness-high-fill text-yellow-500  " x-bind:class="{ 'hidden' : darkMode }" ></i>
+                </button>
+            </div>
         </div>
+        
 
     </div>
 </div>
