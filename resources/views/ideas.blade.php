@@ -1,7 +1,7 @@
 @extends('layouts/dojoapp')
 
 @section('content')
-<div class="flex flex-col p-4 md:ml-60 flex-grow bg-white space-y-5">
+<div class="flex flex-col p-4 flex-grow bg-white space-y-5">
     <h2 class="text-5xl font-extrabold">Submit Ideas</h2>
     <div class="flex flex-wrap space-x-0 lg:space-x-10 space-y-9 lg:space-y-0">
         <form class="w-full max-w-lg">
