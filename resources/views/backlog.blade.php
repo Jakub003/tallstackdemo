@@ -63,7 +63,7 @@
 
                     {{-- Title --}}
                     <div class="flex flex-row space-x-2 px-4 items-center space-x-2"> 
-                        <i class="bi bi-diamond-fill text-xs text-green-500 transform -translate-y-0.5"></i>
+                        <i class="bi bi-diamond-fill text-xs text-red-400 transform -translate-y-0.5"></i>
                         <a href="#">   
                             <h2 class="text-sm transnform -translate-y-1 hover:text-blue-500 ">Responsive Mobile Layout</h2> 
                         </a>
@@ -110,7 +110,7 @@
 
                     {{-- Title --}}
                     <div class="flex flex-row space-x-2 px-4 items-center space-x-2"> 
-                        <i class="bi bi-diamond-fill text-xs text-green-500 transform -translate-y-0.5"></i>
+                        <i class="bi bi-diamond-fill text-xs text-yellow-400 transform -translate-y-0.5"></i>
                         <a href="#">   
                             <h2 class="text-sm transnform -translate-y-1 hover:text-blue-500 ">Drag and drop functionality</h2> 
                         </a>
@@ -157,7 +157,7 @@
 
                     {{-- Title --}}
                     <div class="flex flex-row space-x-2 px-4 items-center space-x-2"> 
-                        <i class="bi bi-diamond-fill text-xs text-green-500 transform -translate-y-0.5"></i>
+                        <i class="bi bi-diamond-fill text-xs text-green-400 transform -translate-y-0.5"></i>
                         <a href="#">   
                             <h2 class="text-sm transnform -translate-y-1 hover:text-blue-500 ">Accordian Menu</h2> 
                         </a>
