@@ -30,9 +30,6 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti consequatur excepturi molestiae mollitia nulla cupiditate beatae est, voluptatibus quaerat quidem dignissimos autem, fugiat dolores optio aspernatur explicabo consectetur sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, excepturi, similique tempora ad minus quidem vero et quam rem error quisquam repellat ullam, veniam vitae. Optio fugit nulla tempora nihil!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam deleniti consequatur excepturi molestiae mollitia nulla cupiditate beatae est, voluptatibus quaerat quidem dignissimos autem, fugiat dolores optio aspernatur explicabo consectetur sint. Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam, excepturi, similique tempora ad minus quidem vero et quam rem error quisquam repellat ullam, veniam vitae. Optio fugit nulla tempora nihil!</p>
     </div>
-
-
-
 </div>
 @endsection
 
