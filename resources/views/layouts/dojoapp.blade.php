@@ -27,6 +27,7 @@
 
 {{-- Header --}}
 <div class="w-full bg-white flex h-16 border-b border-gray-200 dark:bg-gray-700 dark:text-white justify-center">
+  
     <div class="p-4 flex w-full xl:w-8/12 justify-between">
         {{-- Logo --}}
         <a href="/" class="hidden sm:flex text-lg space-x-2 flex-shrink-0 items-center w-60">
@@ -125,11 +126,11 @@
         {{-- Navigation END --}}
 
         {{-- Content --}}
-        @yield('content')
+            @yield('content')
         {{-- Content END --}}
 
         {{-- Right Floating Navigation --}}
-        @yield('sidebar')
+            @yield('sidebar')
         {{-- Right Floating Navigation END --}}
     </div>
     {{-- Content END --}}

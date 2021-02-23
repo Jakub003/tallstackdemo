@@ -5,7 +5,6 @@
     <h2 class="text-5xl font-extrabold">Submit Ideas</h2>
     <div class="flex flex-wrap space-x-0 lg:space-x-10 space-y-9 lg:space-y-0">
         <form class="w-full max-w-lg">
-
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="flex space-x-5 w-full px-3">
                     <div class="w-full">
@@ -16,10 +15,10 @@
                         <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2">DISCORD ID</label>
                         <input class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="name" type="text" placeholder="erlich#5112">
                     </div>
-                    
+
                 </div>
             </div>
-    
+
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full px-3">
                     <label class="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2">
@@ -28,7 +27,7 @@
                     <input class="appearance-none block w-full bg-gray-50 text-gray-700 border border-gray-200 rounded py-3 px-4 mb-3 leading-tight focus:outline-none focus:bg-white focus:border-gray-500" id="email" type="email" placeholder="erlichbachman@aviato.com">
                 </div>
             </div>
-    
+
             <div class="flex flex-wrap -mx-3 mb-6">
                 <div class="w-full px-3">
                     <label class="block tracking-wide text-gray-700 text-xs font-bold mb-2">MESSAGE</label>
@@ -36,8 +35,8 @@
                     <p class="text-gray-600 text-xs italic">Classic Markdown Supported</p>
                 </div>
             </div>
-    
-            <div class="md:flex md:items-center">  
+
+            <div class="md:flex md:items-center">
                 <button class="shadow bg-gray-900 hover:bg-blue-500 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded" type="button">
                 Send Message
                 </button>
@@ -58,11 +57,11 @@
                 <img src="https://i.imgur.com/Rr50knM.png" class="h-6 w-6 rounded">
                 <a href="https://www.instagram.com/tallstackdojo/" target="_blank">Instagram</a>
             </div>
-            
+
         </div>
 
     </div>
-    
+
 </div>
 
 

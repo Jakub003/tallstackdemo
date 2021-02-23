@@ -1,6 +1,9 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Backend\KanbanController;
+use App\Http\Controllers\Backend\TasksController;
+use App\Http\Controllers\Backend\MessageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,6 +15,27 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+Route::middleware(['auth:sanctum', 'verified'])->group(function(){
+
+    //Kanban
+    Route::get('kanban', [KanbanController::class, 'index'])->name('kanban');
+    Route::get('kanban/create', [KanbanController::class, 'create'])->name('kanban.create');
+    Route::post('kanban/store', [KanbanController::class, 'store'])->name('kanban.store');
+
+    //Kanban Tasks
+    Route::get('kanban/{project}/tasks/create', [TasksController::class, 'create'])->name('kanban.tasks.create');
+    Route::post('kanban/{project}/tasks/store', [TasksController::class, 'store'])->name('kanban.tasks.store');
+    Route::get('kanban/{project}/tasks', [TasksController::class, 'tasks'])->name('kanban.tasks');
+    Route::post('kanban/{tag}/tasks', [TasksController::class, 'filterByTag'])->name('kanban.tasks.filterByTag');
+
+    //Tasks Messages
+    Route::get('kanban/{project}/{task}/messages', [MessageController::class, 'index'])->name('kanban.project.task.message');
+    Route::post('kanban/{project}/{task}/messages', [MessageController::class, 'store'])->name('kanban.project.task.message.store');
+
+});
+
+
 
 Route::get('/', function () {
     return view('welcome');
@@ -49,10 +73,6 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/viewpages', function () {
 Route::middleware(['auth:sanctum', 'verified'])->get('/viewideas', function () {
     return view('/backend/viewideas');
 })->name('viewideas');
-
-Route::middleware(['auth:sanctum', 'verified'])->get('/kanban', function () {
-    return view('/backend/kanban');
-})->name('kanban');
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/kanbantask', function () {
     return view('/backend/kanbantask');
