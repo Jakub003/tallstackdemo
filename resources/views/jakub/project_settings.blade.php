@@ -10,7 +10,7 @@
 <div class="flex flex-col space-y-6">
 
     {{-- Project Title --}}
-    <div class="flex flex-col  space-y-4">
+    <div class="flex flex-col space-y-4">
         <h2 class="font-semibold text-xl">Project Icon, Color and Title</h2>
         <button class="bg-blue-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Save Settings </button>
         <form class="flex space-x-4">
@@ -290,7 +290,7 @@
         <form class="flex space-x-4">
             <div class="flex-col">
                 <h2 class="font-semibold">Page Name</h2>
-                <input placeholder="dashboard-page" class="border-2 rounded px-2 py-1 focus:outline-none">
+                <input placeholder="ex... dashboard-page" class="border-2 rounded px-2 py-1 focus:outline-none">
             </div>
             <button class="bg-gray-800 rounded py-1 text-gray-100 w-14 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add</button>
         </form>

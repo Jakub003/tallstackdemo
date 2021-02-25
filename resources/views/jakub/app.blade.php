@@ -32,7 +32,7 @@
         <div class="w-full h-full justify-between flex flex-col bg-blueGray-100 dark:bg-gray-800">
             
             {{-- Header --}}
-            <div class="flex flex-row justify-between h-16 border-b border-gray-200 p-4 xl:px-6">
+            <div class="flex flex-row justify-between h-16 border-b border-gray-200 px-4 pt-4 mb-4">
                 @yield('header')
             </div>
             {{-- 2nd Header --}}
@@ -40,7 +40,7 @@
                 
 
             {{-- Main Content --}}
-            <div class="flex flex-row px-4 py-6 space-x-6 h-full overflow-auto">
+            <div class="flex flex-row px-4  space-x-6 h-full overflow-auto">
                 @yield('body')
             </div>
     
