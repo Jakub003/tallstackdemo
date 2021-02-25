@@ -59,8 +59,7 @@
         <h2 class="font-semibold text-xl">Kanban Columns</h2>
         <div class="flex space-x-4">
             <button class="bg-green-500 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Default Columns </button>
-            <button class="bg-red-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Clear Columns </button>
-            <button class="bg-gray-800 rounded py-1 text-gray-100 w-32 focus:outline-none hover:bg-blue-500 text-sm "> Add Extra Column</button>
+            <button class="bg-red-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Clear Columns </button>   
             <button class="bg-blue-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Save Settings </button>
         </div>
         
@@ -77,6 +76,8 @@
                 <h2 class="font-semibold">Column Name</h2>
                 <input placeholder="ex... Backlog" class="border-2 rounded px-2 py-1 focus:outline-none">
             </div>
+
+            <button class="bg-gray-800 rounded py-1 text-gray-100 w-32 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add Extra Column</button>
         </form>
 
         {{-- Added Columns --}}
@@ -87,6 +88,7 @@
                 <option value="text-red-500 bg-red-300">Red</option>
             </select>
             <input placeholder="Backlog" class="border-2 rounded px-2 py-1 focus:outline-none">
+            <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
         </div>
         <div class="flex space-x-2 px-4">
             <i class="bi bi-grip-vertical text-3xl pb-1 cursor-pointer text-gray-700"></i>
@@ -95,6 +97,7 @@
                 <option value="text-red-500 bg-red-300">Red</option>
             </select>
             <input placeholder="In Progress" class="border-2 rounded px-2 py-1 focus:outline-none">
+            <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
         </div>
         <div class="flex space-x-2 px-4">
             <i class="bi bi-grip-vertical text-3xl pb-1 cursor-pointer text-gray-700"></i>
@@ -103,6 +106,7 @@
                 <option value="text-red-500 bg-red-300">Red</option>
             </select>
             <input placeholder="Complete" class="border-2 rounded px-2 py-1 focus:outline-none">
+            <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
         </div>
         
         {{-- Preview --}}
@@ -162,7 +166,6 @@
         <div class="flex space-x-4">
             <button class="bg-green-500 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Default Tags </button>
             <button class="bg-red-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Clear Tags </button>
-            <button class="bg-gray-800 rounded py-1 text-gray-100 w-32 focus:outline-none hover:bg-blue-500 text-sm "> Add Extra Tag</button>
             <button class="bg-blue-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Save Settings </button>
         </div>
         <form class="flex space-x-4">
@@ -183,6 +186,8 @@
                 <h2 class="font-semibold">Tag name</h2>
                 <input placeholder="ex... layouts" class="border-2 rounded px-2 py-1 focus:outline-none">
             </div>
+
+            <button class="bg-gray-800 rounded py-1 text-gray-100 w-32 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add Extra Tag</button>
             
         </form>
         {{-- Once Tags are Added --}}
@@ -194,6 +199,7 @@
             </select>
             <input placeholder="bi bi-icon" class="border-2 rounded px-2 py-1 focus:outline-none">
             <input placeholder="Bugs" class="border-2 rounded px-2 py-1 focus:outline-none">
+            <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
         </div>
         <div class="flex space-x-2 px-4">
             <i class="bi bi-grip-vertical text-3xl pb-1 cursor-pointer text-gray-700"></i>
@@ -203,6 +209,7 @@
             </select>
             <input placeholder="bi bi-icon" class="border-2 rounded px-2 py-1 focus:outline-none">
             <input placeholder="Design" class="border-2 rounded px-2 py-1 focus:outline-none">
+            <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
         </div>
         <div class="flex space-x-2 px-4">
             <i class="bi bi-grip-vertical text-3xl pb-1 cursor-pointer text-gray-700"></i>
@@ -212,6 +219,7 @@
             </select>
             <input placeholder="bi bi-icon" class="border-2 rounded px-2 py-1 focus:outline-none">
             <input placeholder="Layouts" class="border-2 rounded px-2 py-1 focus:outline-none">
+            <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
         </div>
         <div class="flex space-x-2 px-4">
             <i class="bi bi-grip-vertical text-3xl pb-1 cursor-pointer text-gray-700"></i>
@@ -221,6 +229,7 @@
             </select>
             <input placeholder="bi bi-icon" class="border-2 rounded px-2 py-1 focus:outline-none">
             <input placeholder="Data" class="border-2 rounded px-2 py-1 focus:outline-none">
+            <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
         </div>
         <div class="flex space-x-2 px-4">
             <i class="bi bi-grip-vertical text-3xl pb-1 cursor-pointer text-gray-700"></i>
@@ -230,6 +239,7 @@
             </select>
             <input placeholder="bi bi-icon" class="border-2 rounded px-2 py-1 focus:outline-none">
             <input placeholder="CRUD" class="border-2 rounded px-2 py-1 focus:outline-none">
+            <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
         </div>
 
         {{-- Preview --}}
@@ -275,7 +285,6 @@
     <div class="flex flex-col  space-y-4">
         <h2 class="font-semibold text-xl">Adding Categories</h2>
         <div class="flex space-x-4">
-            <button class="bg-gray-800 rounded py-1 text-gray-100 w-32 focus:outline-none hover:bg-blue-500 text-sm "> Add Extra Category</button>
             <button class="bg-blue-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Save Settings </button>
         </div>
         <form class="flex space-x-4">
@@ -283,9 +292,24 @@
                 <h2 class="font-semibold">Category Name</h2>
                 <input placeholder="dashboard-page" class="border-2 rounded px-2 py-1 focus:outline-none">
             </div>
-            
+            <button class="bg-gray-800 rounded py-1 text-gray-100 w-32 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add Extra Category</button>
         </form>
-
+        {{-- Added Categories --}}
+        <div class="flex space-x-2 px-4">
+            <i class="bi bi-grip-vertical text-3xl pb-1 cursor-pointer text-gray-700"></i>
+            <input placeholder="dashboard-project" class="border-2 rounded px-2 py-1 focus:outline-none">
+            <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
+        </div>
+        <div class="flex space-x-2 px-4">
+            <i class="bi bi-grip-vertical text-3xl pb-1 cursor-pointer text-gray-700"></i>
+            <input placeholder="kanban" class="border-2 rounded px-2 py-1 focus:outline-none">
+            <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
+        </div>
+        <div class="flex space-x-2 px-4">
+            <i class="bi bi-grip-vertical text-3xl pb-1 cursor-pointer text-gray-700"></i>
+            <input placeholder="example-category" class="border-2 rounded px-2 py-1 focus:outline-none">
+            <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
+        </div>
 
         <hr>
     </div>
