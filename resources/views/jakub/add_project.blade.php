@@ -77,7 +77,7 @@
                 <input placeholder="ex... Backlog" class="border-2 rounded px-2 py-1 focus:outline-none">
             </div>
 
-            <button class="bg-gray-800 rounded py-1 text-gray-100 w-32 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add Extra Column</button>
+            <button class="bg-gray-800 rounded py-1 text-gray-100 w-14 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add</button>
         </form>
 
         {{-- Added Columns --}}
@@ -187,7 +187,7 @@
                 <input placeholder="ex... layouts" class="border-2 rounded px-2 py-1 focus:outline-none">
             </div>
 
-            <button class="bg-gray-800 rounded py-1 text-gray-100 w-32 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add Extra Tag</button>
+            <button class="bg-gray-800 rounded py-1 text-gray-100 w-14 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add</button>
             
         </form>
         {{-- Once Tags are Added --}}
@@ -292,7 +292,7 @@
                 <h2 class="font-semibold">Category Name</h2>
                 <input placeholder="dashboard-page" class="border-2 rounded px-2 py-1 focus:outline-none">
             </div>
-            <button class="bg-gray-800 rounded py-1 text-gray-100 w-32 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add Extra Category</button>
+            <button class="bg-gray-800 rounded py-1 text-gray-100 w-14 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add</button>
         </form>
         {{-- Added Categories --}}
         <div class="flex space-x-2 px-4">
