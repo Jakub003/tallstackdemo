@@ -17,7 +17,7 @@
             <!-- Dashboard -->
             <div class="flex h-12 w-20 flex-shrink-0 space-x-2 group ">
                 <div class="h-12 w-2 rounded bg-gray-900 transform -translate-x-1 group-hover:bg-blue-500"></div>
-                <a href="#">
+                <a href="{{ route('jakub') }}">
                     <div class=" h-12 w-12 px-4 rounded-md bg-gray-800 flex justify-center items-center text-gray-200 text-2xl pb-2 group-hover:bg-blue-500 group-hover:text-gray-900">
                         <i class="bi bi-house"></i>
                     </div>
@@ -27,7 +27,7 @@
             <!-- Kanban -->
             <div class="flex h-12 w-20 flex-shrink-0 space-x-2 group ">
                 <div class="h-12 w-2 rounded bg-gray-900 transform -translate-x-1 group-hover:bg-blue-500"></div>
-                <a href="/jakub">
+                <a href="{{ route('jakub') }}">
                     <div class=" h-12 w-12 px-4 rounded-md bg-gray-800 flex justify-center items-center text-gray-200 text-2xl pb-2 group-hover:bg-blue-500 group-hover:text-gray-900">
                         <i class="bi bi-kanban"></i>
                     </div>

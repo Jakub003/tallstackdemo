@@ -38,11 +38,15 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
 // Attempt #2
 Route::get('/jakub', function () {
     return view('jakub/kanban');
-});
+})->name('jakub');
 
-Route::get('/jakub/add_project', function () {
-    return view('jakub/add_project');
-});
+Route::get('/jakub/project_settings', function () {
+    return view('jakub/project_settings');
+})->name('project-settings');
+
+Route::get('/jakub/view_project', function () {
+    return view('jakub/view_project');
+})->name('view-project');
 
 
 

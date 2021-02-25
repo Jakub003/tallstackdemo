@@ -2,7 +2,7 @@
 
 {{-- Header --}}
 @section('header')
-    Add New Project
+    Project Settings - Add and Update Kanban Projects
 @endsection
 
 {{-- Body --}}
@@ -281,20 +281,20 @@
     </div>
 
 
-    {{-- Project Categories --}}
+    {{-- Project Pages --}}
     <div class="flex flex-col  space-y-4">
-        <h2 class="font-semibold text-xl">Adding Categories</h2>
+        <h2 class="font-semibold text-xl">Adding Pages</h2>
         <div class="flex space-x-4">
             <button class="bg-blue-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Save Settings </button>
         </div>
         <form class="flex space-x-4">
             <div class="flex-col">
-                <h2 class="font-semibold">Category Name</h2>
+                <h2 class="font-semibold">Page Name</h2>
                 <input placeholder="dashboard-page" class="border-2 rounded px-2 py-1 focus:outline-none">
             </div>
             <button class="bg-gray-800 rounded py-1 text-gray-100 w-14 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add</button>
         </form>
-        {{-- Added Categories --}}
+        {{-- Added Pages --}}
         <div class="flex space-x-2 px-4">
             <i class="bi bi-grip-vertical text-3xl pb-1 cursor-pointer text-gray-700"></i>
             <input placeholder="dashboard-project" class="border-2 rounded px-2 py-1 focus:outline-none">

@@ -5,6 +5,10 @@
 
 @endsection
 
+@section('toggle')
+
+@endsection
+
 {{-- Body --}}
 @section('body')
 

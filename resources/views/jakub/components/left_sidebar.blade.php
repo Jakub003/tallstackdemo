@@ -3,8 +3,8 @@
     class="hidden xl:flex flex-col z-50 w-70 min-h-full border-r bg-white border-gray-200 flex-shrink-0 dark:bg-gray-500" x-bind:class="{'absolute xl:static inset-y-0 left-0 flex sm:mb-0' : leftSidebarOverlay, 'hidden' : !leftSidebarOverlay }" >
 
     <div class="h-16 py-4 flex flex-row justify-between items-center flex-shrink-0 border-b border-gray-200">
-        <a href="/jakub"><h3 class="font-semibold text-lg ml-6">Projects</h3></a>
-        <a href="/jakub/add_project" class="h-8 w-8 rounded bg-blueGray-100 text-lg text-gray-900 mr-6 focus:outline-none hover:text-white hover:bg-blue-500 ">
+        <a href="{{ route('jakub') }}"><h3 class="font-semibold text-lg ml-6">Projects</h3></a>
+        <a href="{{ route('project-settings') }}" class="h-8 w-8 rounded bg-blueGray-100 text-lg text-gray-900 mr-6 focus:outline-none hover:text-white hover:bg-blue-500 ">
             <i class="bi bi-plus pl-1.5"></i>
         </a>
     </div>
@@ -16,7 +16,7 @@
             <div class="flex flex-row w-6 h-6 items-center pb-1 justify-center bg-yellow-100 rounded-lg">
                 <i class="text-yellow-400 bi bi-emoji-laughing-fill"></i>
             </div>
-            <h2 class="font-semibold hover:text-blue-500">Project Name<h2>
+            <a href="{{ route('view-project') }}" class="cursor-pointer"><h2 class="font-semibold hover:text-blue-500">Project Name<h2></a>
         </div>
 
         <!-- Open Project -->
@@ -33,19 +33,11 @@
             </div>
 
             <div clas="flex flex-col">
-                <!-- Kanban Feature -->
-                <div class="flex flex-row justify-between items-center w-full border rounded border-blueGray-200 px-2 py-1 mt-4 hover:text-white hover:bg-blue-500 hover:border-blue-500">
-                    <div class="flex flex-row text-sm space-x-3 "> 
-                        <i class="text-xs bi bi-kanban"></i>
-                        <h2>Dashboard</h2>
-                    </div>
-                    <div class="bg-red-500 h-4 w-4 rounded text-xs text-white pl-1"> 1 </div>
-                </div>
-
+               
                 <!-- Project Tags -->
                 <div class="flex flex-row justify-between items-center w-full border border-white rounded  px-2 py-1 mt-1.5 text-white bg-blue-500">
-                    <div class="flex flex-row text-sm ">All Tags</div>
-                    <div class="h-4 w-4 rounded text-xs text-white "> 15 </div>
+                    <div class="flex flex-row text-sm ">All Pages</div>
+                    <div class="h-4 w-4 rounded text-xs text-white "> 45 </div>
                 </div>
 
                 <div class="flex flex-row justify-between items-center w-full border border-white rounded  px-2 py-1 mt-1.5 bg-white hover:bg-blue-500 hover:text-white hover:border-blue-500">
@@ -72,14 +64,7 @@
                     <div class="h-4 w-4 rounded text-xs "> 10 </div>
                 </div>
 
-                <!-- Kanban Sidebar Tasks -->
-                <div class="flex flex-row justify-between items-center w-full border border-white rounded   px-2 py-1 mt-1.5 bg-white hover:bg-blue-500 hover:text-white hover:border-blue-500">
-                    <div class="flex flex-row items-center space-x-3 ">
-                        <i class="text-xs bi bi-check-circle mb-1"></i>
-                        <div class="flex flex-row text-sm  ">Archived</div>
-                    </div>
-                    <div class="h-4 w-4 rounded text-xs "> 35 </div>
-                </div>
+    
             </div>
 
         </div>

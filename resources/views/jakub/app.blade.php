@@ -28,24 +28,26 @@
         @include('jakub/components/left_sidebar')
         
 
-        {{-- Middle Body + Mobile Navigation Menu --}}
+        {{-- Middle Body --}}
         <div class="w-full h-full justify-between flex flex-col bg-blueGray-100 dark:bg-gray-800">
             
             {{-- Header --}}
             <div class="flex flex-row justify-between h-16 border-b border-gray-200 p-4 xl:px-6">
                 @yield('header')
             </div>
-            {{-- Header END --}}
+            {{-- 2nd Header --}}
+                @yield('toggle')
                 
+
             {{-- Main Content --}}
             <div class="flex flex-row px-4 py-6 space-x-6 h-full overflow-auto">
                 @yield('body')
             </div>
-            {{-- Main END --}}
+    
 
             
         </div>
-        {{-- Middle Body + Mobile Navigaton END --}}
+
 
 </body>
 </html>

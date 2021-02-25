@@ -1,4 +1,5 @@
-<div class="group flex flex-col w-full border border-gray-200 rounded-md shadow-sm hover:shadow-md bg-white">
+{{-- Task Card --}}
+<div class="group flex flex-col  border border-gray-200 rounded-md shadow-sm hover:shadow-md m-2">
 
     {{-- Task Tag --}}
     <div class="flex p-2 cursor-pointer flex-wrap">
@@ -38,6 +39,4 @@
             </div>
         </div>
     </div>
-
-    
 </div>

@@ -7,16 +7,19 @@
             <h2 class="text-gray-400 text-xs">15</h2>
         </div>
         
-        <button class="h-7 w-7 pb-0.5 rounded-md text-base bg-Gray-200 bg-white hover:bg-blue-500 hover:text-white focus:outline-none">
-            <i class="bi bi-plus text-base"></i>
+        <button class="h-6 w-6 rounded-md text-base bg-Gray-200 text-gray-800 bg-gray-100 hover:bg-blue-500 hover:text-white focus:outline-none">
+            <i class="bi bi-plus"></i>
         </button>
     </div>
 
     {{-- Task Column --}}
-    <div class="flex flex-col space-y-3 p-1 overflow-y-auto">
-        @include('jakub/components/kanban_card')
-        @include('jakub/components/kanban_card')
-        @include('jakub/components/kanban_card')
+    <div class="flex flex-col space-y-3 pb-4 overflow-y-auto">
+        @include('jakub/components/kanban_task')
+
+            
+        </div>
+        {{-- Task Card END --}}         
+
     </div>
 
 </div>
