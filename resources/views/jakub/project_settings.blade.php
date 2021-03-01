@@ -8,10 +8,11 @@
 {{-- Body --}}
 @section('body')
 <div class="flex flex-col space-y-6">
-
+{{-- // QUESTION 1 START // --}}
     {{-- Project Title --}}
     <div class="flex flex-col space-y-4">
         <h2 class="font-semibold text-xl">Project Icon, Color and Title</h2>
+        
         <button class="bg-blue-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Save Settings </button>
         <form class="flex space-x-4">
             <div class="flex-col">
@@ -53,6 +54,7 @@
 
         <hr>
     </div>
+{{-- // QUESTION 1 END // --}}
 
     {{-- Project Columns --}}
     <div class="flex flex-col  space-y-4">
