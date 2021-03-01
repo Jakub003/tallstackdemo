@@ -12,12 +12,38 @@
     {{-- Project Title --}}
     <div class="flex flex-col space-y-4">
         <h2 class="font-semibold text-xl">Project Icon, Color and Title</h2>
-        
-        <button class="bg-blue-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Save Settings </button>
-        <form class="flex space-x-4">
+
+
+       <!--
+        This form is used to pass the data to Project Controller store method.
+        In <form> we use method="POST" and action="controller method store" which is responsible for to store data in database
+        in this form route name ('project.store') is responsible to pass this form data to store method of project controller
+       -->
+
+        <form method="POST" action="{{ route('project.store') }}" class="flex space-x-4">
+        @csrf <!--to submit form we need to add CSRF token, without it form cannot be submit.-->
+
+            <!--
+            Button which is responsible for submitting the form, It should be in the <form></form> tags
+            and button type should be submit if it is used to submit any form. type = submit
+            -->
+            <button type="submit" class="bg-blue-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Save Settings </button>
+
+
+
+
             <div class="flex-col">
                 <h2 class="font-semibold">Color</h2>
-                <select name="icon_color" id="icon_color" class="border-2 rounded px-2 py-1 focus:outline-none w-20">
+                <!--try html input fields have the same name as column name
+                like we have color column in project table so this field name should be color.
+
+                to get data from the input field, it must have a name, so from this name we can access this input field in controller.
+
+                For Example
+                to get the color in Store method in controller
+                $request->color // here color is the html input field name.
+                -->
+                <select name="color" id="icon_color" class="border-2 rounded px-2 py-1 focus:outline-none w-20">
                     <option value="text-blue-500 bg-blue-300">Blue</option>
                     <option value="text-red-500 bg-red-300">Red</option>
                 </select>
@@ -25,14 +51,29 @@
 
             <div class="flex-col">
                 <h2 class="font-semibold">Icon</h2>
-                <input placeholder="bi bi-icon" class="border-2 rounded px-2 py-1 focus:outline-none">
+                <!--
+                try html input fields have the same name as column name
+                like we have icon column in project table so this field name should be icon
+                each input has different types, like text, email, date, int etc.
+                each input field must have different name.
+
+                -->
+                <input type="text" name="icon" placeholder="bi bi-icon" class="border-2 rounded px-2 py-1 focus:outline-none">
             </div>
 
             <div class="flex-col">
                 <h2 class="font-semibold">Project Name</h2>
-                <input placeholder="project name" class="border-2 rounded px-2 py-1 focus:outline-none">
+
+                <!--
+              try html input fields have the same name as column name
+              like we have name column in project table (which is the title of project) so this field name should be name
+              each input has different types, like text, email, date, int etc.
+              each input field must have different name.
+
+              -->
+                <input type="text" name="name" placeholder="project name" class="border-2 rounded px-2 py-1 focus:outline-none">
             </div>
-            
+
         </form>
 
         {{-- Preview --}}
@@ -61,10 +102,10 @@
         <h2 class="font-semibold text-xl">Kanban Columns</h2>
         <div class="flex space-x-4">
             <button class="bg-green-500 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Default Columns </button>
-            <button class="bg-red-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Clear Columns </button>   
+            <button class="bg-red-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Clear Columns </button>
             <button class="bg-blue-400 rounded py-1 text-gray-100 w-28 focus:outline-none hover:bg-blue-500 text-sm "> Save Settings </button>
         </div>
-        
+
         <form class="flex space-x-4">
             <div class="flex-col">
                 <h2 class="font-semibold">Color</h2>
@@ -110,7 +151,7 @@
             <input placeholder="Complete" class="border-2 rounded px-2 py-1 focus:outline-none">
             <i class="bi bi-x-circle-fill text-red-200 hover:text-red-500 mt-2 cursor-pointer"></i>
         </div>
-        
+
         {{-- Preview --}}
         <div class="bg-white border-2 rounded border-gray-800 space-x-4">
             <div class="px-4 py-2 bg-gray-800 text-white w-full">
@@ -119,33 +160,33 @@
             {{-- Content --}}
             <div class="flex p-4 space-x-4">
                 <div class="flex flex-row justify-between items-center w-72 py-3 px-2 border-b-2 border-red-400">
-                    <div class="flex flex-row  text-base font-semibold space-x-3 items-center"> 
+                    <div class="flex flex-row  text-base font-semibold space-x-3 items-center">
                         <h2 class="">Backlog</h2>
                         <h2 class="text-gray-400 text-xs">15</h2>
                     </div>
-                    
+
                     <button class="h-6 w-6 rounded-md text-base bg-Gray-200 text-gray-800 bg-gray-100 hover:bg-blue-500 hover:text-white focus:outline-none">
                         <i class="bi bi-plus"></i>
                     </button>
                 </div>
 
                 <div class="flex flex-row justify-between items-center w-72 py-3 px-2 border-b-2 border-blue-400">
-                    <div class="flex flex-row  text-base font-semibold space-x-3 items-center"> 
+                    <div class="flex flex-row  text-base font-semibold space-x-3 items-center">
                         <h2 class="">In Progress</h2>
                         <h2 class="text-gray-400 text-xs">15</h2>
                     </div>
-                    
+
                     <button class="h-6 w-6 rounded-md text-base bg-Gray-200 text-gray-800 bg-gray-100 hover:bg-blue-500 hover:text-white focus:outline-none">
                         <i class="bi bi-plus"></i>
                     </button>
                 </div>
 
                 <div class="flex flex-row justify-between items-center w-72 py-3 px-2 border-b-2 border-green-400">
-                    <div class="flex flex-row  text-base font-semibold space-x-3 items-center"> 
+                    <div class="flex flex-row  text-base font-semibold space-x-3 items-center">
                         <h2 class="">Complete</h2>
                         <h2 class="text-gray-400 text-xs">15</h2>
                     </div>
-                    
+
                     <button class="h-6 w-6 rounded-md text-base bg-Gray-200 text-gray-800 bg-gray-100 hover:bg-blue-500 hover:text-white focus:outline-none">
                         <i class="bi bi-plus"></i>
                     </button>
@@ -154,8 +195,8 @@
             </div>
         </div>
 
-        
-        
+
+
 
         <hr>
     </div>
@@ -190,7 +231,7 @@
             </div>
 
             <button class="bg-gray-800 rounded py-1 text-gray-100 w-14 focus:outline-none hover:bg-blue-500 text-sm mt-7 mb-1 "> Add</button>
-            
+
         </form>
         {{-- Once Tags are Added --}}
         <div class="flex space-x-2 px-4">
@@ -251,27 +292,27 @@
             </div>
             {{-- Content --}}
             <div class=" p-4 flex flex-wrap items-center">
-                <button class="flex flex-row m-2 focus:outline-none bg-red-300 hover:bg-red-500 rounded text-sm text-white p-1  items-center"> 
+                <button class="flex flex-row m-2 focus:outline-none bg-red-300 hover:bg-red-500 rounded text-sm text-white p-1  items-center">
                     <i class="bi bi-bug transform -translate-y-0.5"></i>
                     <h2 class="px-1">Bugs</h2>
                 </button>
-                
-                <button class="flex flex-row m-2 focus:outline-none bg-blue-300 hover:bg-blue-500 rounded text-sm text-white p-1  items-center"> 
+
+                <button class="flex flex-row m-2 focus:outline-none bg-blue-300 hover:bg-blue-500 rounded text-sm text-white p-1  items-center">
                     <i class="bi bi-brush transform -translate-y-0.5"></i>
                     <h2 class="px-1">Design</h2>
                 </button>
 
-                <button class="flex flex-row m-2 focus:outline-none bg-purple-300 hover:bg-purple-500 rounded text-sm text-white p-1  items-center"> 
+                <button class="flex flex-row m-2 focus:outline-none bg-purple-300 hover:bg-purple-500 rounded text-sm text-white p-1  items-center">
                     <i class="bi bi-columns transform -translate-y-0.5"></i>
                     <h2 class="px-1">Layout</h2>
                 </button>
 
-                <button class="flex flex-row m-2 focus:outline-none bg-yellow-300 hover:bg-yellow-500 rounded text-sm text-white p-1  items-center"> 
+                <button class="flex flex-row m-2 focus:outline-none bg-yellow-300 hover:bg-yellow-500 rounded text-sm text-white p-1  items-center">
                     <i class="bi bi-archive transform -translate-y-0.5"></i>
                     <h2 class="px-1">Data</h2>
                 </button>
 
-                <button class="flex flex-row m-2 focus:outline-none bg-green-300 hover:bg-green-500 rounded text-sm text-white p-1  items-center"> 
+                <button class="flex flex-row m-2 focus:outline-none bg-green-300 hover:bg-green-500 rounded text-sm text-white p-1  items-center">
                     <i class="bi bi-arrow-repeat transform -translate-y-0.5"></i>
                     <h2 class="px-1">CRUD</h2>
                 </button>

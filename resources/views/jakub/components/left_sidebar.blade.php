@@ -1,10 +1,19 @@
 {{-- Left Sidebar --}}
-<div @click.away="leftSidebarOverlay = false" 
+<div @click.away="leftSidebarOverlay = false"
     class="hidden xl:flex flex-col z-50 w-70 min-h-full border-r bg-white border-gray-200 flex-shrink-0 dark:bg-gray-500" x-bind:class="{'absolute xl:static inset-y-0 left-0 flex sm:mb-0' : leftSidebarOverlay, 'hidden' : !leftSidebarOverlay }" >
 
     <div class="h-16 py-4 flex flex-row justify-between items-center flex-shrink-0 border-b border-gray-200">
         <a href="{{ route('jakub') }}"><h3 class="font-semibold text-lg ml-6">Projects</h3></a>
-        <a href="{{ route('project-settings') }}" class="h-8 w-8 rounded bg-blueGray-100 text-lg text-gray-900 mr-6 focus:outline-none hover:text-white hover:bg-blue-500 ">
+
+        <!--
+            Here we passing the route of create project page
+            in web.php we define
+            Route::get('project/create', [ProjectController::class, 'create'])->name('project.create');
+
+            Now in blade file we can access the route name which is ('project.create') with help of route() method.
+
+         -->
+        <a href="{{ route('project.create') }}" class="h-8 w-8 rounded bg-blueGray-100 text-lg text-gray-900 mr-6 focus:outline-none hover:text-white hover:bg-blue-500 ">
             <i class="bi bi-plus pl-1.5"></i>
         </a>
     </div>
@@ -33,7 +42,7 @@
             </div>
 
             <div clas="flex flex-col">
-               
+
                 <!-- Project Tags -->
                 <div class="flex flex-row justify-between items-center w-full border border-white rounded  px-2 py-1 mt-1.5 text-white bg-blue-500">
                     <div class="flex flex-row text-sm ">All Pages</div>
@@ -64,7 +73,7 @@
                     <div class="h-4 w-4 rounded text-xs "> 10 </div>
                 </div>
 
-    
+
             </div>
 
         </div>
@@ -92,7 +101,7 @@
             </div>
             <h2 class="font-semibold hover:text-blue-500">Stream Layout<h2>
         </div>
-    </div>    
+    </div>
 
 </div>
 {{-- Left Sidebar END --}}

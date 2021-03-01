@@ -11,17 +11,9 @@ class Project extends Model
 {
     use HasFactory;
 
+    // in protectd fillable define column names
+    // If column name are not defined in this aaray we are unable to store data in database.
     protected $fillable = [
-        'user_id', 'name', 'order', 'is_active'
+         'id', 'name', 'icon', 'color'
     ];
-
-    public function user()
-    {
-        return $this->belongsTo(User::class);
-    }
-
-    public function tasks()
-    {
-        return $this->hasMany(Task::class);
-    }
 }

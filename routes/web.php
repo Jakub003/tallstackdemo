@@ -5,6 +5,9 @@ use App\Http\Controllers\Backend\KanbanController;
 use App\Http\Controllers\Backend\TasksController;
 use App\Http\Controllers\Backend\MessageController;
 
+//Path reference of the controller if we no define the controller path, Route will not work
+use App\Http\Controllers\ProjectController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -48,6 +51,26 @@ Route::get('/jakub/view_project', function () {
     return view('jakub/view_project');
 })->name('view-project');
 
+
+/*
+For now do not use resource route. just concentrate get, post routes.
+*/
+
+//Route::get('url', [NameController::class, 'MethdName'])->name('name of route');
+//try to name the route as it URL shown.
+//
+//For Example:
+//URL = project/create  So route name should be project.create
+//
+
+
+//This route is used to access the Controller method (index) which is responsible for show create project title page.
+// To get the Html or Blade view, we use get method. so we write Route::get
+Route::get('project/create', [ProjectController::class, 'create'])->name('project.create');
+
+//This route is used to access Controller method (store) which is responsible for data store in database.
+//When we want to store data in database we use (post) method. So we write Route::post
+Route::post('project/store', [ProjectController::class, 'store'])->name('project.store');
 
 
 
