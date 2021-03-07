@@ -38,6 +38,7 @@ Route::middleware(['auth:sanctum', 'verified'])->group(function(){
 
 });
 
+
 // Attempt #2
 Route::get('/jakub', function () {
     return view('jakub/kanban');

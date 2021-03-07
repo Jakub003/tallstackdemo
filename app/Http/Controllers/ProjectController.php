@@ -11,7 +11,7 @@ class ProjectController extends Controller
     public function create()
     {
         return view('jakub.project_settings'); // correct way
-        //return view('jakub.project_settings'); // Wrong way
+        //return view('jakub/project_settings'); // Wrong way
 
         //use . (dot) instead of / (forward slash) to separate the folder
     }

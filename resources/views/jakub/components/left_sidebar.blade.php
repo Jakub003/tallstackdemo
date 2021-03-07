@@ -5,14 +5,6 @@
     <div class="h-16 py-4 flex flex-row justify-between items-center flex-shrink-0 border-b border-gray-200">
         <a href="{{ route('jakub') }}"><h3 class="font-semibold text-lg ml-6">Projects</h3></a>
 
-        <!--
-            Here we passing the route of create project page
-            in web.php we define
-            Route::get('project/create', [ProjectController::class, 'create'])->name('project.create');
-
-            Now in blade file we can access the route name which is ('project.create') with help of route() method.
-
-         -->
         <a href="{{ route('project.create') }}" class="h-8 w-8 rounded bg-blueGray-100 text-lg text-gray-900 mr-6 focus:outline-none hover:text-white hover:bg-blue-500 ">
             <i class="bi bi-plus pl-1.5"></i>
         </a>
